@@ -1,29 +1,17 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import api from '../api/axios'
-<<<<<<< HEAD
-// import '../style/dashboard.css'
-=======
->>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
 import '../style/patients.css'
 
 import PatientSearch from "../components/patients/PatientSearch";
 import PatientTable from "../components/patients/PatientTable";
 import {
-<<<<<<< HEAD
-    FiActivity,
-    FiUsers,
-    FiChevronLeft,
-    FiChevronRight
-} from "react-icons/fi";
-=======
     FiChevronLeft,
     FiChevronRight
 } from "react-icons/fi";
 
 import { FaUserPlus } from "react-icons/fa";
 import Layout from "../components/Layout";
->>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
 
 const Dashboard = () => {
     const [patients, setPatients] = useState([]);
@@ -87,96 +75,15 @@ const Dashboard = () => {
     }, []);
 
     return (
-<<<<<<< HEAD
-        <div className="patients-page">
-            <div className="patients-header">
-
-                <div className="patients-title-section">
-                    <h1>Patients</h1>
-                    <p>Manage and view your registered patients</p>
-                </div>
-
-                <div className="patients-header-actions">
-                    <Link to="/pharmacy">
-                        <button className="pharmacy-btn" type="button">
-                            <FiActivity />
-                            <span>Medicine Queue</span>
-                        </button>
-                    </Link>
-
-                    <PatientSearch
-                        searchQuery={search}
-                        setSearchQuery={setSearch}
-                        setPage={setPage}
-                    />
-                </div>
-            </div>
-
-            <div className="patients-content">
-
-                {/* <div className="patients-summary">
-                    <div className="summary-icon">
-                        <FiUsers />
-                    </div>
-
-                    <div>
-                        <span>Total Patients</span>
-                        <strong>{filteredPatients.length}</strong>
-                    </div>
-                </div> */}
-
-                <div className="patient-table-wrapper">
-                    <PatientTable
-                        patients={filteredPatients}
-                        onDelete={handleDeletePatient}
-                        fetchPatients={fetchPatients}
-                    />
-                </div>
-
-                <div className="patients-pagination">
-
-                    <button
-                        className="pagination-btn"
-                        disabled={page === 1}
-                        onClick={() => setPage((prev) => prev - 1)}
-                    >
-                        <FiChevronLeft />
-                        <span>Prev</span>
-                    </button>
-
-                    <span className="pagination-info">
-                        Page <strong>{page}</strong> of <strong>{totalPages}</strong>
-                    </span>
-
-                    <button
-                        className="pagination-btn"
-                        disabled={page === totalPages}
-                        onClick={() => setPage((prev) => prev + 1)}
-                    >
-                        <span>Next</span>
-                        <FiChevronRight />
-                    </button>
-
-                </div>
-            </div>
-        </div>
-=======
-<<<<<<< HEAD
         <Layout user={user}>
             <div className="patients-page">
                 <div className="patients-header">
-=======
-        <div className="dashboard-container">
-            {/* <h1>Dashboard</h1> */}
-            <div className="dashboard-actions">
->>>>>>> 10d8d41a54c1b16b61fe0558da5210cdb2de9019
 
                     <div className="patients-title-section">
                         <h1>Patients</h1>
                         <p>Manage and view your registered patients</p>
                     </div>
 
-<<<<<<< HEAD
                     <div className="patients-header-actions">
                         <PatientSearch
                             searchQuery={search}
@@ -195,15 +102,6 @@ const Dashboard = () => {
                         onDelete={handleDeletePatient}
                         fetchPatients={fetchPatients}
                     />
-=======
-                {/* <Link to='/appointments/today'>
-                    <button className="today-appointments-btn" type="submit">Today's Appointments</button>
-                </Link>
-                <Link to='/newPatient' >
-                    <button className="new-patient-btn" type="submit">New Patient</button>
-                </Link> 
-                */}
->>>>>>> 10d8d41a54c1b16b61fe0558da5210cdb2de9019
 
                     <div className="patients-pagination">
 
@@ -233,7 +131,6 @@ const Dashboard = () => {
                 </div>
             </div>
         </Layout>
->>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
     )
 }
 

@@ -68,8 +68,7 @@ const Frontal = () => {
             ).length;
 
             const totalPatientsResponse = await api.get("/patients");
-            const totalPatients = Array.isArray(totalPatientsResponse.data.data) ? totalPatientsResponse.data.data.length : 0;
-
+            const totalPatients = totalPatientsResponse.data.totalPatients ? totalPatientsResponse.data.totalPatients : 0;
             setDashboardData({
                 totalPatients: totalPatients,
                 todayAppointments: appointments.length,

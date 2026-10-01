@@ -3,7 +3,7 @@ import {
     FaHome,
     FaCalendarAlt,
     FaUser,
-    FaCog
+    FaFileMedical,
 } from "react-icons/fa";
 import "./styles/dashboard.css";
 
@@ -58,13 +58,13 @@ const Sidebar = ({ user }) => {
                     <span>Patients</span>
                 </button>
 
-                {/* <button
+                <button
                     className="sidebar-link"
-                    onClick={() => navigate("/settings")}
+                    onClick={() => navigate("/pharmacy")}
                 >
-                    <FaCog />
-                    <span>Settings</span>
-                </button> */}
+                    <FaFileMedical />
+                    <span>Medicine Queue</span>
+                </button>
 
             </div>
 

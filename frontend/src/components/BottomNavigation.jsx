@@ -2,7 +2,8 @@ import { useNavigate } from "react-router";
 import {
     FaHome,
     FaCalendarAlt,
-    FaUser
+    FaUser,
+    FaFileMedical,
 } from "react-icons/fa";
 import "./styles/dashboard.css";
 
@@ -34,6 +35,15 @@ const BottomNavigation = ({ user }) => {
             >
                 <FaUser size={20} />
                 <span>Patients</span>
+            </button>
+
+            <button
+                onClick={() =>
+                    navigate('/pharmacy')
+                }
+            >
+                <FaFileMedical size={20} />
+                <span>Medicine Queue</span>
             </button>
 
         </div>

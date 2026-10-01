@@ -75,15 +75,22 @@ const Dashboard = () => {
     }, []);
 
     return (
+<<<<<<< HEAD
         <Layout user={user}>
             <div className="patients-page">
                 <div className="patients-header">
+=======
+        <div className="dashboard-container">
+            {/* <h1>Dashboard</h1> */}
+            <div className="dashboard-actions">
+>>>>>>> 10d8d41a54c1b16b61fe0558da5210cdb2de9019
 
                     <div className="patients-title-section">
                         <h1>Patients</h1>
                         <p>Manage and view your registered patients</p>
                     </div>
 
+<<<<<<< HEAD
                     <div className="patients-header-actions">
                         <PatientSearch
                             searchQuery={search}
@@ -102,6 +109,15 @@ const Dashboard = () => {
                         onDelete={handleDeletePatient}
                         fetchPatients={fetchPatients}
                     />
+=======
+                {/* <Link to='/appointments/today'>
+                    <button className="today-appointments-btn" type="submit">Today's Appointments</button>
+                </Link>
+                <Link to='/newPatient' >
+                    <button className="new-patient-btn" type="submit">New Patient</button>
+                </Link> 
+                */}
+>>>>>>> 10d8d41a54c1b16b61fe0558da5210cdb2de9019
 
                     <div className="patients-pagination">
 

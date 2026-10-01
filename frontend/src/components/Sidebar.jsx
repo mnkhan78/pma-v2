@@ -3,7 +3,11 @@ import {
     FaHome,
     FaCalendarAlt,
     FaUser,
+<<<<<<< HEAD
     FaFileMedical,
+=======
+    FaCog
+>>>>>>> 10d8d41a54c1b16b61fe0558da5210cdb2de9019
 } from "react-icons/fa";
 import "./styles/dashboard.css";
 
@@ -17,7 +21,11 @@ const Sidebar = ({ user }) => {
             <div className="sidebar-top">
 
                 <div className="sidebar-logo">
+<<<<<<< HEAD
                     <h2>PMA</h2>
+=======
+                    <h2>Slotify</h2>
+>>>>>>> 10d8d41a54c1b16b61fe0558da5210cdb2de9019
                 </div>
 
                 <div className="sidebar-user">
@@ -58,6 +66,7 @@ const Sidebar = ({ user }) => {
                     <span>Patients</span>
                 </button>
 
+<<<<<<< HEAD
                 <button
                     className="sidebar-link"
                     onClick={() => navigate("/pharmacy")}
@@ -65,6 +74,15 @@ const Sidebar = ({ user }) => {
                     <FaFileMedical />
                     <span>Medicine Queue</span>
                 </button>
+=======
+                {/* <button
+                    className="sidebar-link"
+                    onClick={() => navigate("/settings")}
+                >
+                    <FaCog />
+                    <span>Settings</span>
+                </button> */}
+>>>>>>> 10d8d41a54c1b16b61fe0558da5210cdb2de9019
 
             </div>
 

@@ -2,8 +2,17 @@ import { useNavigate } from "react-router";
 import {
     FaHome,
     FaCalendarAlt,
+<<<<<<< HEAD
     FaUser,
     FaFileMedical,
+=======
+<<<<<<< HEAD
+    FaUser,
+    FaFileMedical,
+=======
+    FaUser
+>>>>>>> 10d8d41a54c1b16b61fe0558da5210cdb2de9019
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
 } from "react-icons/fa";
 import "./styles/dashboard.css";
 
@@ -37,6 +46,10 @@ const BottomNavigation = ({ user }) => {
                 <span>Patients</span>
             </button>
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
             <button
                 onClick={() =>
                     navigate('/pharmacy')
@@ -46,6 +59,11 @@ const BottomNavigation = ({ user }) => {
                 <span>Medicine Queue</span>
             </button>
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 10d8d41a54c1b16b61fe0558da5210cdb2de9019
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
         </div>
     );
 };

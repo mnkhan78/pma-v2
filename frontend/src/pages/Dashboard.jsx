@@ -1,27 +1,37 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import api from '../api/axios'
+<<<<<<< HEAD
 // import '../style/dashboard.css'
+=======
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
 import '../style/patients.css'
 
 import PatientSearch from "../components/patients/PatientSearch";
 import PatientTable from "../components/patients/PatientTable";
 import {
+<<<<<<< HEAD
     FiActivity,
     FiUsers,
     FiChevronLeft,
     FiChevronRight
 } from "react-icons/fi";
+=======
+    FiChevronLeft,
+    FiChevronRight
+} from "react-icons/fi";
+
+import { FaUserPlus } from "react-icons/fa";
+import Layout from "../components/Layout";
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
 
 const Dashboard = () => {
     const [patients, setPatients] = useState([]);
-
     const [searchQuery, setSearchQuery] = useState("");
-
     const [search, setSearch] = useState("");
-
     const [page, setPage] = useState(1);
     const [totalPages, setTotalPages] = useState(1);
+    const [user, setUser] = useState(null);
 
     useEffect(() => {
         fetchPatients(page);
@@ -48,14 +58,12 @@ const Dashboard = () => {
         }
         try {
             await api.delete(`/patients/${patientId}`);
-
             alert('Patient deleted successfully ❌');
 
             // Update UI instantly (no reload needed)
             setPatients(prev =>
                 prev.filter(patient => patient._id !== patientId)
             );
-
         } catch (error) {
             console.error("Error deleting patient:", error);
         }
@@ -64,7 +72,6 @@ const Dashboard = () => {
 
     const filteredPatients = patients.filter((patient) => {
         const query = searchQuery.toLowerCase(); //case insensitive
-
         return (
             patient.fullName.toLowerCase().includes(query) ||
             patient.phone.includes(query) ||
@@ -72,7 +79,15 @@ const Dashboard = () => {
         )
     })
 
+    useEffect(() => {
+        const storedUser = localStorage.getItem('user');
+        if (storedUser) {
+            setUser(JSON.parse(storedUser));
+        }
+    }, []);
+
     return (
+<<<<<<< HEAD
         <div className="patients-page">
             <div className="patients-header">
 
@@ -145,6 +160,80 @@ const Dashboard = () => {
                 </div>
             </div>
         </div>
+=======
+<<<<<<< HEAD
+        <Layout user={user}>
+            <div className="patients-page">
+                <div className="patients-header">
+=======
+        <div className="dashboard-container">
+            {/* <h1>Dashboard</h1> */}
+            <div className="dashboard-actions">
+>>>>>>> 10d8d41a54c1b16b61fe0558da5210cdb2de9019
+
+                    <div className="patients-title-section">
+                        <h1>Patients</h1>
+                        <p>Manage and view your registered patients</p>
+                    </div>
+
+<<<<<<< HEAD
+                    <div className="patients-header-actions">
+                        <PatientSearch
+                            searchQuery={search}
+                            setSearchQuery={setSearch}
+                            setPage={setPage}
+                        />
+                        <Link to="/newPatient">
+                            <FaUserPlus />
+                        </Link>
+                    </div>
+                </div>
+
+                <div className="patients-content">
+                    <PatientTable
+                        patients={filteredPatients}
+                        onDelete={handleDeletePatient}
+                        fetchPatients={fetchPatients}
+                    />
+=======
+                {/* <Link to='/appointments/today'>
+                    <button className="today-appointments-btn" type="submit">Today's Appointments</button>
+                </Link>
+                <Link to='/newPatient' >
+                    <button className="new-patient-btn" type="submit">New Patient</button>
+                </Link> 
+                */}
+>>>>>>> 10d8d41a54c1b16b61fe0558da5210cdb2de9019
+
+                    <div className="patients-pagination">
+
+                        <button
+                            className="pagination-btn"
+                            disabled={page === 1}
+                            onClick={() => setPage((prev) => prev - 1)}
+                        >
+                            <FiChevronLeft />
+                            <span>Prev</span>
+                        </button>
+
+                        <span className="pagination-info">
+                            Page <strong>{page}</strong> of <strong>{totalPages}</strong>
+                        </span>
+
+                        <button
+                            className="pagination-btn"
+                            disabled={page === totalPages}
+                            onClick={() => setPage((prev) => prev + 1)}
+                        >
+                            <span>Next</span>
+                            <FiChevronRight />
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </Layout>
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
     )
 }
 

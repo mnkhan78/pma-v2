@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 /* =========================================================
    PATIENTS PAGE
 ========================================================= */
 
+=======
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
 .patients-page {
     min-height: 100%;
     padding: 28px;
@@ -57,15 +60,24 @@
 
     border: 1px solid #d7e8f8;
     border-radius: 11px;
+<<<<<<< HEAD
 
     background: #ffffff;
     color: #1768bd;
 
+=======
+    background: #ffffff;
+
+    color: #1768bd;
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
     font-size: 14px;
     font-weight: 600;
 
     cursor: pointer;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
     transition: all 0.2s ease;
 }
 
@@ -129,10 +141,16 @@
     justify-content: center;
 
     border-radius: 12px;
+<<<<<<< HEAD
 
     background: #d7f4ea;
     color: #10a477;
 
+=======
+    background: #d7f4ea;
+
+    color: #10a477;
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
     font-size: 21px;
 }
 
@@ -162,7 +180,10 @@
 
     border: 1px solid #e3eef8;
     border-radius: 15px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
     background: #ffffff;
 }
 
@@ -182,13 +203,22 @@
 }
 
 
+<<<<<<< HEAD
 /* TABLE HEADER */
+=======
+/* =========================================================
+   TABLE HEADER
+========================================================= */
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
 
 .patient-table thead th {
     padding: 15px 18px;
 
     background: #f0f7fd;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
     color: #42688f;
 
     font-size: 12px;
@@ -210,7 +240,13 @@
 }
 
 
+<<<<<<< HEAD
 /* TABLE ROW */
+=======
+/* =========================================================
+   TABLE ROW
+========================================================= */
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
 
 .patient-table tbody tr {
     transition: background 0.2s ease;
@@ -242,9 +278,15 @@
 .patient-id-badge {
     display: inline-flex;
     align-items: center;
+<<<<<<< HEAD
 
     min-width: 74px;
     justify-content: center;
+=======
+    justify-content: center;
+
+    min-width: 74px;
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
 
     padding: 6px 10px;
 
@@ -381,9 +423,13 @@
     padding: 0;
 
     border-radius: 9px;
+<<<<<<< HEAD
 
     background: #ffffff;
 
+=======
+    background: #ffffff;
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
     border: 1px solid #dbe9f5;
 
     cursor: pointer;
@@ -458,8 +504,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     gap: 18px;
 
+=======
+
+    gap: 18px;
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
     margin-top: 20px;
 }
 
@@ -469,6 +520,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
     gap: 6px;
 
     padding: 0 13px;
@@ -517,9 +572,19 @@
 
 .patient-table tbody:empty::after {
     content: "No patients found";
+<<<<<<< HEAD
     display: block;
     padding: 40px;
     text-align: center;
+=======
+
+    display: block;
+
+    padding: 40px;
+
+    text-align: center;
+
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
     color: #8ca2b9;
 }
 
@@ -546,33 +611,54 @@
     .patients-header-actions .pharmacy-btn {
         flex-shrink: 0;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
 }
 
 
 /* =========================================================
    MOBILE
+<<<<<<< HEAD
 ========================================================= */
 /* =========================================================
    MOBILE PATIENT PAGE
    max-width: 650px
+=======
+   Up to 650px
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
 ========================================================= */
 
 @media (max-width: 650px) {
 
+<<<<<<< HEAD
     /* GLOBAL MOBILE WIDTH FIX */
     html, body {
         width: 100%;
         max-width: 100%;
         overflow-x: hidden;
     }
+=======
+    /* ---------------------------------------------------------
+       PAGE
+    --------------------------------------------------------- */
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
 
     .patients-page {
         width: 100%;
         max-width: 100%;
         min-width: 0;
+<<<<<<< HEAD
         box-sizing: border-box;
         padding: 12px;
+=======
+
+        padding: 12px;
+
+        box-sizing: border-box;
+
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
         overflow-x: hidden;
     }
 
@@ -582,6 +668,7 @@
         box-sizing: border-box;
     }
 
+<<<<<<< HEAD
     /* HEADER */
     .patients-header {
         width: 100%;
@@ -589,6 +676,22 @@
         display: flex;
         flex-direction: column;
         align-items: stretch;
+=======
+
+    /* ---------------------------------------------------------
+       HEADER
+    --------------------------------------------------------- */
+
+    .patients-header {
+        width: 100%;
+        max-width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: stretch;
+
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
         gap: 10px;
         margin-bottom: 12px;
     }
@@ -600,23 +703,46 @@
 
     .patients-title-section h1 {
         margin: 0;
+<<<<<<< HEAD
         font-size: 22px;
         line-height: 1.2;
+=======
+
+        font-size: 22px;
+        line-height: 1.2;
+
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
         color: #123d7a;
     }
 
     .patients-title-section p {
         margin: 4px 0 0;
+<<<<<<< HEAD
         font-size: 11px;
         line-height: 1.4;
         color: #7890ad;
     }
 
     /* HEADER ACTIONS */
+=======
+
+        font-size: 11px;
+        line-height: 1.4;
+
+        color: #7890ad;
+    }
+
+
+    /* ---------------------------------------------------------
+       HEADER ACTIONS
+    --------------------------------------------------------- */
+
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
     .patients-header-actions {
         width: 100%;
         max-width: 100%;
         min-width: 0;
+<<<<<<< HEAD
         display: flex;
         flex-direction: column;
         gap: 8px;
@@ -627,12 +753,45 @@
         max-width: 100%;
         min-width: 0;
         box-sizing: border-box;
+=======
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        gap: 10px;
+    }
+
+    .patients-header-actions > * {
+        min-width: 0;
+    }
+
+    /*
+       Search should occupy available space.
+       Add-patient icon stays beside it.
+    */
+
+    .patients-header-actions > :first-child {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .patients-header-actions > a {
+        flex: 0 0 auto;
+
+        width: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
     }
 
     .patients-header-actions input {
         width: 100%;
         max-width: 100%;
         min-width: 0;
+<<<<<<< HEAD
         box-sizing: border-box;
     }
 
@@ -647,6 +806,33 @@
         gap: 7px;
         padding: 0 12px;
         border-radius: 7px;
+=======
+
+        box-sizing: border-box;
+    }
+
+
+    /* ---------------------------------------------------------
+       MEDICINE QUEUE
+    --------------------------------------------------------- */
+
+    .pharmacy-btn {
+        width: 100%;
+        max-width: 100%;
+
+        height: 38px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 7px;
+
+        padding: 0 12px;
+
+        border-radius: 7px;
+
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
         font-size: 12px;
     }
 
@@ -654,11 +840,20 @@
         font-size: 14px;
     }
 
+<<<<<<< HEAD
     /* MAIN CONTENT CONTAINER */
+=======
+
+    /* ---------------------------------------------------------
+       MAIN CONTENT
+    --------------------------------------------------------- */
+
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
     .patients-content {
         width: 100%;
         max-width: 100%;
         min-width: 0;
+<<<<<<< HEAD
         box-sizing: border-box;
         padding: 10px;
         border-radius: 15px;
@@ -666,24 +861,61 @@
     }
 
     /* SUMMARY */
+=======
+
+        padding: 10px;
+
+        box-sizing: border-box;
+
+        border-radius: 15px;
+
+        overflow: hidden;
+    }
+
+
+    /* ---------------------------------------------------------
+       SUMMARY
+    --------------------------------------------------------- */
+
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
     .patients-summary {
         width: 100%;
         max-width: 100%;
         min-width: 0;
+<<<<<<< HEAD
         box-sizing: border-box;
         display: flex;
         align-items: center;
         gap: 11px;
         padding: 10px 13px;
         margin-bottom: 10px;
+=======
+
+        display: flex;
+        align-items: center;
+
+        gap: 11px;
+
+        padding: 10px 13px;
+        margin-bottom: 10px;
+
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
         border-radius: 12px;
     }
 
     .summary-icon {
         width: 35px;
         height: 35px;
+<<<<<<< HEAD
         flex-shrink: 0;
         border-radius: 10px;
+=======
+
+        flex-shrink: 0;
+
+        border-radius: 10px;
+
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
         font-size: 17px;
     }
 
@@ -695,11 +927,20 @@
         font-size: 18px;
     }
 
+<<<<<<< HEAD
     /* TABLE WRAPPER */
+=======
+
+    /* =========================================================
+       TABLE WRAPPER
+    ========================================================= */
+
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
     .patient-table-wrapper {
         width: 100%;
         max-width: 100%;
         min-width: 0;
+<<<<<<< HEAD
         box-sizing: border-box;
         border: none;
         overflow: hidden;
@@ -713,6 +954,32 @@
         max-width: 100%;
         min-width: 0;
         box-sizing: border-box;
+=======
+
+        box-sizing: border-box;
+
+        border: none;
+
+        overflow: hidden;
+
+        background: transparent;
+    }
+
+
+    /* =========================================================
+       TABLE → MOBILE CARD
+    ========================================================= */
+
+    .patient-table {
+        display: block;
+
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        box-sizing: border-box;
+
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
         border-collapse: separate;
         border-spacing: 0;
     }
@@ -723,6 +990,7 @@
 
     .patient-table tbody {
         display: block;
+<<<<<<< HEAD
         width: 100%;
         max-width: 100%;
         min-width: 0;
@@ -747,6 +1015,60 @@
         border-radius: 12px;
         background: #ffffff;
         box-shadow: 0 2px 8px rgba(45, 110, 160, 0.04);
+=======
+
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =========================================================
+       PATIENT CARD
+    ========================================================= */
+
+    .patient-table tbody tr {
+        display: grid;
+
+        /*
+           IMPORTANT:
+           Only ONE column now.
+
+           This removes the large empty space that existed
+           between patient information and action buttons.
+        */
+
+        grid-template-columns: minmax(0, 1fr);
+
+        grid-template-rows:
+            auto
+            auto
+            auto
+            auto;
+
+        row-gap: 8px;
+
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        box-sizing: border-box;
+
+        padding: 12px;
+
+        margin-bottom: 8px;
+
+        border: 1px solid #e3edf6;
+        border-radius: 12px;
+
+        background: #ffffff;
+
+        box-shadow:
+            0 2px 8px rgba(45, 110, 160, 0.04);
+
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
         overflow: hidden;
     }
 
@@ -754,6 +1076,7 @@
         margin-bottom: 0;
     }
 
+<<<<<<< HEAD
     /* RESET CELL STYLES */
     .patient-table tbody td {
         display: block;
@@ -770,33 +1093,99 @@
         grid-column: 1 / -1;
         grid-row: 1;
         margin-bottom: 2px;
+=======
+
+    /* ---------------------------------------------------------
+       RESET CELLS
+    --------------------------------------------------------- */
+
+    .patient-table tbody td {
+        display: block;
+
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        box-sizing: border-box;
+
+        padding: 0;
+
+        border: none;
+    }
+
+
+    /* =========================================================
+       ROW 1 — PATIENT ID
+    ========================================================= */
+
+    .patient-table tbody td:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
+
+        margin: 0;
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
     }
 
     .patient-id-badge {
         display: inline-flex;
+<<<<<<< HEAD
         align-items: center;
         justify-content: center;
         min-width: 0;
         padding: 3px 8px;
         border-radius: 20px;
+=======
+
+        align-items: center;
+        justify-content: center;
+
+        min-width: 0;
+
+        padding: 4px 9px;
+
+        border-radius: 20px;
+
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
         font-size: 10px;
         line-height: 1;
     }
 
+<<<<<<< HEAD
     /* ROW 2 LEFT: NAME & AVATAR */
     .patient-table tbody td:nth-child(2) {
         grid-column: 1;
         grid-row: 2;
+=======
+
+    /* =========================================================
+       ROW 2 — PATIENT NAME
+    ========================================================= */
+
+    .patient-table tbody td:nth-child(2) {
+        grid-column: 1;
+        grid-row: 2;
+
+        width: 100%;
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
     }
 
     .patient-name-cell {
         width: 100%;
+<<<<<<< HEAD
         display: flex;
         align-items: center;
+=======
+        min-width: 0;
+
+        display: flex;
+        align-items: center;
+
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
         gap: 8px;
     }
 
     .patient-avatar {
+<<<<<<< HEAD
         width: 34px;
         height: 34px;
         flex-shrink: 0;
@@ -804,30 +1193,60 @@
         align-items: center;
         justify-content: center;
         border-radius: 50%;
+=======
+        width: 36px;
+        height: 36px;
+
+        flex: 0 0 36px;
+
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
         font-size: 12px;
     }
 
     .patient-name-info {
         min-width: 0;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
         overflow: hidden;
     }
 
     .patient-name-info strong {
         display: block;
+<<<<<<< HEAD
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+=======
+
+        max-width: 100%;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+
+        white-space: nowrap;
+
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
         font-size: 13px;
         line-height: 1.2;
     }
 
     .patient-name-info span {
         display: block;
+<<<<<<< HEAD
         margin-top: 1px;
+=======
+
+        margin-top: 2px;
+
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
         font-size: 9px;
         line-height: 1;
     }
 
+<<<<<<< HEAD
     /* ROW 2 RIGHT: GENDER BADGE */
     .patient-table tbody td:nth-child(4) {
         grid-column: 2;
@@ -850,18 +1269,47 @@
     .patient-table tbody td:nth-child(3) {
         grid-column: 1;
         grid-row: 3;
+=======
+
+    /* =========================================================
+       ROW 3 — PHONE + GENDER
+       
+       Phone stays left.
+       Gender sits naturally beside it if there is room.
+    ========================================================= */
+
+    .patient-table tbody td:nth-child(3) {
+        grid-column: 1;
+        grid-row: 3;
+
+        width: 100%;
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
         margin: 0;
     }
 
     .patient-phone {
         display: block;
+<<<<<<< HEAD
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+=======
+
+        width: fit-content;
+        max-width: 100%;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+
+        white-space: nowrap;
+
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
         font-size: 11px;
         line-height: 1.2;
     }
 
+<<<<<<< HEAD
     /* ROW 3 RIGHT: ACTION BUTTONS */
     .patient-table tbody td:nth-child(5) {
         grid-column: 2;
@@ -875,14 +1323,118 @@
         align-items: center;
         justify-content: flex-end;
         gap: 4px;
+=======
+
+    /* Gender */
+
+    .patient-table tbody td:nth-child(4) {
+        grid-column: 1;
+        grid-row: 3;
+
+        justify-self: end;
+
+        width: auto;
+
+        margin: 0;
+
+        pointer-events: none;
+    }
+
+    .patient-table tbody td:nth-child(4) .gender-badge {
+        position: relative;
+
+        /*
+           Push gender to the right of the same row
+           without creating a desktop-sized column.
+        */
+
+        transform: translateY(0);
+    }
+
+    .gender-badge {
+        display: inline-flex;
+
+        align-items: center;
+        justify-content: center;
+
+        padding: 4px 9px;
+
+        border-radius: 20px;
+
+        font-size: 9px;
+        line-height: 1;
+
+        white-space: nowrap;
+    }
+
+
+    /*
+       Put phone and gender on the same visual row.
+       Since both are separate TDs, use absolute positioning
+       only for the gender badge.
+    */
+
+    .patient-table tbody tr {
+        position: relative;
+    }
+
+    .patient-table tbody td:nth-child(4) {
+        position: absolute;
+
+        right: 12px;
+        bottom: 48px;
+    }
+
+
+    /* =========================================================
+       ROW 4 — ACTION BUTTONS
+       
+       FULL WIDTH + LEFT ALIGNED.
+       
+       THIS IS THE MAIN FIX.
+    ========================================================= */
+
+    .patient-table tbody td:nth-child(5) {
+        grid-column: 1;
+        grid-row: 4;
+
+        width: 100%;
+
+        justify-self: start;
+
+        margin: 0;
+
+        padding-top: 2px;
+    }
+
+    .patient-actions {
+        width: 100%;
+        max-width: 100%;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: flex-start;
+
+        gap: 6px;
+
+        flex-wrap: nowrap;
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
     }
 
     .patient-actions a {
         display: inline-flex;
+<<<<<<< HEAD
+=======
+
+        flex: 0 0 auto;
+
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
         text-decoration: none;
     }
 
     .patient-action {
+<<<<<<< HEAD
         width: 28px;
         height: 28px;
         flex-shrink: 0;
@@ -901,17 +1453,67 @@
         align-items: center;
         justify-content: center;
         gap: 8px;
+=======
+        width: 30px;
+        height: 30px;
+
+        flex: 0 0 30px;
+
+        display: inline-flex;
+
+        align-items: center;
+        justify-content: center;
+
+        padding: 0;
+
+        border-radius: 7px;
+
+        font-size: 13px;
+    }
+
+
+    /* =========================================================
+       PAGINATION
+    ========================================================= */
+
+    .patients-pagination {
+        width: 100%;
+        max-width: 100%;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 8px;
+
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
         margin-top: 10px;
     }
 
     .pagination-btn {
         height: 32px;
+<<<<<<< HEAD
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 5px;
         padding: 0 9px;
         border-radius: 7px;
+=======
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 5px;
+
+        padding: 0 9px;
+
+        border-radius: 7px;
+
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
         font-size: 11px;
     }
 
@@ -921,6 +1523,7 @@
 
     .pagination-info {
         font-size: 11px;
+<<<<<<< HEAD
         white-space: nowrap;
     }
 
@@ -928,35 +1531,79 @@
     .patient-table tbody:empty {
         min-height: 80px;
         display: flex;
+=======
+
+        white-space: nowrap;
+    }
+
+
+    /* =========================================================
+       EMPTY STATE
+    ========================================================= */
+
+    .patient-table tbody:empty {
+        min-height: 80px;
+
+        display: flex;
+
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
         align-items: center;
         justify-content: center;
     }
 }
 
+<<<<<<< HEAD
 /* =========================================================
    EXTRA SMALL DEVICES
    360px and below
+=======
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+   380px and below
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
 ========================================================= */
 
 @media (max-width: 380px) {
 
     .patients-page {
+<<<<<<< HEAD
         padding: 10px 8px;
+=======
+        padding: 8px;
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
     }
 
     .patients-content {
         padding: 7px;
+<<<<<<< HEAD
+=======
+        border-radius: 13px;
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
     }
 
     .patient-table tbody tr {
         padding: 10px;
 
+<<<<<<< HEAD
         column-gap: 5px;
     }
 
     .patient-avatar {
         width: 33px;
         height: 33px;
+=======
+        row-gap: 7px;
+
+        margin-bottom: 7px;
+    }
+
+    .patient-avatar {
+        width: 34px;
+        height: 34px;
+
+        flex-basis: 34px;
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
 
         font-size: 11px;
     }
@@ -965,14 +1612,32 @@
         font-size: 12px;
     }
 
+<<<<<<< HEAD
     .patient-action {
         width: 26px;
         height: 26px;
+=======
+    .patient-phone {
+        font-size: 10px;
+    }
+
+    .gender-badge {
+        padding: 4px 8px;
+        font-size: 8px;
+    }
+
+    .patient-action {
+        width: 28px;
+        height: 28px;
+
+        flex-basis: 28px;
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
 
         font-size: 12px;
     }
 
     .patient-actions {
+<<<<<<< HEAD
         gap: 3px;
     }
 
@@ -1014,4 +1679,8 @@
         gap: 4px;
     }
 
+=======
+        gap: 4px;
+    }
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
 }

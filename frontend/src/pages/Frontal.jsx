@@ -56,7 +56,11 @@ const Frontal = () => {
 
             const completed = appointments.filter(
                 (appointment) =>
+<<<<<<< HEAD
+                    appointment.status === "Completed"
+=======
                     appointment.status === "completed"
+>>>>>>> 10d8d41a54c1b16b61fe0558da5210cdb2de9019
             ).length;
 
             const pending = appointments.filter(
@@ -68,7 +72,16 @@ const Frontal = () => {
             ).length;
 
             const totalPatientsResponse = await api.get("/patients");
+<<<<<<< HEAD
             const totalPatients = totalPatientsResponse.data.totalPatients ? totalPatientsResponse.data.totalPatients : 0;
+=======
+<<<<<<< HEAD
+            const totalPatients = totalPatientsResponse.data.totalPatients ? totalPatientsResponse.data.totalPatients : 0;
+=======
+            const totalPatients = Array.isArray(totalPatientsResponse.data.data) ? totalPatientsResponse.data.data.length : 0;
+
+>>>>>>> 10d8d41a54c1b16b61fe0558da5210cdb2de9019
+>>>>>>> 96c49262d961cdbf0048e98c52f65a8985d72b92
             setDashboardData({
                 totalPatients: totalPatients,
                 todayAppointments: appointments.length,

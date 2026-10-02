@@ -31,131 +31,141 @@ body{
 
 /* ---------------- HEADER ---------------- */
 
-.header{
-    display:flex;
-    justify-content:space-between;
-    // align-items:flex-start;
-    // align-items:center;
-    border-bottom:3px solid;
-    border-image: linear-gradient(to right, #FF0000 33.33%, #0B4EA2 33.33%) 1;
-    padding-bottom:8px;
-    margin-bottom:10px;
+/* ================= HEADER ================= */
 
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    width: 100%;
+
+    border-bottom: 3px solid #0B4EA2;
+    
+
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
-.logo-container{
-    padding-top:5px;
+
+/* ================= LEFT : DOCTOR ================= */
+
+.doctor-section {
+    min-width: 0;
+    padding-left: 0;
+    padding-right: 15px;
 }
 
-.logo-container img{
-    width:220px;
-} 
-
-.logo-container .para{
-    font-size:14px;
-    color:#555;
-    font-weight:600;
-    margin-top:4px;
-    line-height:1.4;
+.doctor-heading {
+    display: block;
 }
-.logo-container .contact-details{
-    margin-top:4px;
-    font-size:12px;
-    line-height:1.4;
+
+.doctor-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0B4EA2;
+    line-height: 1.1;
+    margin-bottom: 4px;
+}
+
+.qualification-column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.qualification {
+    color: #D32F2F;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.achievement-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.achievement {
+    font-size: 11px;
     color: #444;
+    line-height: 1.25;
 }
 
-.clinic-details{
-    flex:1;
-    padding-left:20px;
+
+/* ================= CENTER : LOGO ================= */
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
 }
 
-.clinic-name{
-    font-size:28px;
-    font-weight:bold;
-    color:#0B4EA2;
+.logo-container img {
+    display: block;
+    width: 150px;
+    height: auto;
 }
 
-.tagline{
-    color:#555;
-    margin-top:5px;
+
+/* ================= RIGHT : CLINIC DETAILS ================= */
+
+.contact-details {
+    text-align: left;
+
+    padding-left: 15px;
 }
 
-.doctor-section{
-    flex:1;
-    padding-left:22px;
+.clinic-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0B4EA2;
+
+    line-height: 1.15;
+    margin-bottom: 5px;
 }
 
-.doctor{
-    margin-top:12px;
-    font-size:20px;
-    font-weight:bold;
+.website,
+.phone,
+.address,
+.email {
+    font-size: 11px;
+    color: #444;
+    line-height: 1.4;
+    text-align: left;
 }
 
-.doctor-name{
-    font-size:30px;
-    font-weight:700;
-    color:#0B4EA2;
-    margin-bottom:5px;
+.website {
+    color: #0B4EA2;
 }
 
-.doctor-heading{
-    display:flex;
-    align-items:flex-start;
-    gap:10px;
+
+/* ================= CONSULTANT ================= */
+
+.consultant-block {
+    margin-top: 10px;
 }
 
-.qualification-column{
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-start;
-    margin-top:4px;
-}
+.consultant-title {
+    color: #0B4EA2;
+    font-weight: 700;
+    font-size: 14px;
 
-.qualification{
-    color:#D32F2F;
-    font-size:12px;
-    font-weight:700;
-    line-height:1.05;
-    white-space:nowrap;
-}
+    margin-bottom: 2px;
 
-.achievement-list{
-    display:flex;
-    flex-direction:column;
-    // gap:5px;
-}
-
-.achievement{
-    font-size:12px;
-    color:#444;
-    line-height:1.2;
-}
-
-.consultant-block{
-    margin-top:10px;
-}
-
-.consultant-title{
-    color:#0B4EA2;
-    font-weight:700;
-    font-size:16px;
-    margin-bottom:2px;
     border-bottom: 1px solid #0B4EA2;
     display: inline-block;
 }
 
-.consultant-name{
-    font-size:20px;
-    color:#0B4EA2;
-    font-weight:700;
-    margin-bottom:5px;
-}
+.consultant-name {
+    font-size: 18px;
+    color: #0B4EA2;
+    font-weight: 700;
 
-.contact{
-    margin-top:10px;
-    font-size:12px;
-    line-height:1.6;
+    margin-bottom: 4px;
 }
 
 /* -------- Patient Information -------- */
@@ -227,7 +237,6 @@ body{
     width: 100%;
     box-sizing: border-box;
 
-    background: #0B4EA2;
     color: #FFFFFF;
 
     padding: 6px 10px;
@@ -251,10 +260,10 @@ body{
 }
 
 .branch {
-    color: #FFFFFF;
+    color: #0B4EA2;
     font-size: 10px;
     line-height: 1.35;
-
+    font-weight: 900;
     margin: 0;
     padding: 0;
 }

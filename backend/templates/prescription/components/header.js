@@ -9,18 +9,6 @@ const Header = () => {
 
 <div class="header">
 
-    <div class="logo-container">
-        <img
-            class="logo"
-            src="data:image/jpeg;base64,${logoBase64}"
-        />
-        <p class="para"> For Online Appointments:</p>
-        <div class="contact-details"> 
-            ${clinic.website ? `<div class="website">Visit: ${clinic.website}</div>` : ""}
-            ${clinic.email ? `<div class="email">Email: ${clinic.email}</div>` : ""}
-        </div>
-    </div>
-
     <div class="doctor-section">
         <div class="doctor-heading">
             <div class="doctor-name">
@@ -44,7 +32,7 @@ const Header = () => {
                 item => `
                         <div class="achievement">
 
-                            • ${item}
+                            ${item}
 
                         </div>
                     `
@@ -71,7 +59,7 @@ const Header = () => {
                     <div class="achievement-list">
                         ${doc.achievements.map(a => `
                             <div class="achievement">
-                                • ${a}
+                                ${a}
                             </div>
                         `).join("")}
                     </div>
@@ -82,6 +70,24 @@ const Header = () => {
 
             ""
         }
+    </div>
+
+    <div class="logo-container">
+        <img
+            class="logo"
+            src="data:image/jpeg;base64,${logoBase64}"
+        />
+    </div>
+
+
+    <div>
+        <div class="contact-details">
+            ${clinic.clinicName ? `<div class="clinic-name">${clinic.clinicName}</div>` : ""}
+            ${clinic.address ? `<div class="address">${clinic.address}</div>` : ""}
+            ${clinic.website ? `<div class="website">Visit: ${clinic.website}</div>` : ""}
+            ${clinic.phone ? `<div class="phone">Call: ${clinic.phone}</div>` : ""}
+            ${clinic.email ? `<div class="email">Email: ${clinic.email}</div>` : ""}
+        </div>
     </div>
 </div>
 

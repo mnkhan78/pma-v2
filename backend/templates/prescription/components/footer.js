@@ -13,7 +13,7 @@ const Footer = () => {
                             branch => `
                                     <div class="branch">
             
-                                        • ${branch}
+                                        ${branch}
             
                                     </div>
                                 `

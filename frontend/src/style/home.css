@@ -12,7 +12,7 @@
   color: var(--pma-ink);
   background: #fff;
   font-family: Inter, "Segoe UI", sans-serif;
-  overflow: hidden;
+  overflow: clip;
 }
 
 .pma-home * {
@@ -23,7 +23,7 @@
   text-decoration: none;
 }
 
-.pma-navbar {
+/* .pma-navbar {
   width: 100%;
   min-height: 82px;
   padding: 16px 6.5%;
@@ -35,7 +35,29 @@
   border-bottom: 1px solid #edf2f4;
   position: relative;
   z-index: 5;
+} */
+
+.pma-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  width: 100%;
+  min-height: 82px;
+  padding: 16px 6.5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid #edf2f4;
 }
+
 
 .pma-brand {
   display: flex;
@@ -200,6 +222,12 @@
   gap: 13px;
   flex-wrap: wrap;
 }
+
+.pma-final-cta .pma-hero-actions {
+  justify-content: center;
+  align-items: center;
+}
+
 
 .pma-button {
   min-height: 49px;

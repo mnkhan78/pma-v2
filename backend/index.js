@@ -24,6 +24,8 @@ const { jwtAuthMiddleware, authorizeRoles } = require('./authetication/jwt.auth'
 
 const app = express();
 
+app.set("trust proxy", 1);
+
 // app.use(cors())
 app.use(cors({
   origin: process.env.CLIENT_URL,

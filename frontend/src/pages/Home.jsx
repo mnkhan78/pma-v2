@@ -1,8 +1,10 @@
-
 import { Link } from "react-router-dom";
 import AuthButton from "../components/home/AuthButton";
 import Footer from "../components/home/Footer";
 import "../style/home.css";
+import ContactModal from "../components/home/ContactModal";
+import "../components/styles/contact-modal.css";
+import { useState } from "react";
 
 const features = [
   {
@@ -86,7 +88,9 @@ const steps = [
   },
 ];
 
+
 const Home = () => {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   return (
     <div className="pma-home">
       <header className="pma-navbar">
@@ -106,9 +110,23 @@ const Home = () => {
 
         <div className="pma-nav-actions">
           <AuthButton />
+          {/* <button
+            type="button"
+            className="pma-contact-cta"
+            onClick={() => setIsContactModalOpen(true)}
+          >
+            Contact Us
+          </button>
           <Link to="/signup" className="pma-nav-cta">
             Get Started <span aria-hidden="true">↗</span>
-          </Link>
+          </Link> */}
+          <button
+            type="button"
+            className="pma-nav-cta"
+            onClick={() => setIsContactModalOpen(true)}
+          >
+            Get Started <span aria-hidden="true">↗</span>
+          </button>
         </div>
       </header>
 
@@ -132,9 +150,17 @@ const Home = () => {
             </p>
 
             <div className="pma-hero-actions">
-              <Link to="/signup" className="pma-button pma-button-primary">
+              {/* <Link to="/signup" className="pma-button pma-button-primary">
                 Get Started <span aria-hidden="true">→</span>
-              </Link>
+              </Link> */}
+
+              <button
+                type="button"
+                className="pma-button pma-button-primary"
+                onClick={() => setIsContactModalOpen(true)}
+              >
+                Get Started <span aria-hidden="true">↗</span>
+              </button>
 
               <a href="#features" className="pma-button pma-button-outline">
                 Explore Features
@@ -334,9 +360,16 @@ const Home = () => {
               your everyday clinic operations.
             </p>
             <div className="pma-hero-actions">
-              <Link to="/signup" className="pma-button pma-button-white">
+              {/* <Link to="/signup" className="pma-button pma-button-white">
                 Get Started <span aria-hidden="true">→</span>
-              </Link>
+              </Link> */}
+              <button
+                type="button"
+                className="pma-button pma-button-white"
+                onClick={() => setIsContactModalOpen(true)}
+              >
+                Get Started <span aria-hidden="true">↗</span>
+              </button>
               <Link to="/frontal" className="pma-button pma-button-ghost">
                 Open Dashboard
               </Link>
@@ -346,6 +379,9 @@ const Home = () => {
       </main>
 
       <Footer />
+      {isContactModalOpen && (
+        <ContactModal onClose={() => setIsContactModalOpen(false)} />
+      )}
     </div>
   );
 };

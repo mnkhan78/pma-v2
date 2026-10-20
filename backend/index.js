@@ -14,6 +14,7 @@ const pharmacyRoutes = require('./routes/pharmacy.routes');
 const analyticsRoutes = require('./routes/analytics.routes');
 const bmiRoutes = require('./routes/bmi.routes');
 const prescriptionRoutes = require ('./routes/prescription.routes');
+const contactRoutes = require('./routes/contact.routes');
 
 // Public patient-facing routes
 const publicQueueRoutes = require('./routes/public/queue.routes');
@@ -47,6 +48,7 @@ app.use('/appointments', appointmentRoutes);
 app.use('/users', userRoutes);
 app.use('/pharmacy', pharmacyRoutes);
 app.use('/analytics', analyticsRoutes);
+app.use('/contactus', contactRoutes);
 
 //public patient-facing APIs
 app.use('/api/public/queue', publicQueueRoutes);

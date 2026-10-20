@@ -14,6 +14,7 @@ const ContactModal = ({ onClose }) => {
   });
 
   const [status, setStatus] = useState("idle");
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const handleKeyDown = (event) => {
@@ -41,6 +42,7 @@ const ContactModal = ({ onClose }) => {
   
 const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     try {
         await api.post("/contactus", formData);
@@ -72,6 +74,8 @@ const handleSubmit = async (e) => {
             message: error.response?.data?.message ||
                 "Failed to submit your enquiry. Please try again.",
         });
+    } finally {
+        setLoading(false);
     }
 };
 
@@ -147,6 +151,7 @@ const handleSubmit = async (e) => {
                   onChange={handleChange}
                   autoComplete="name"
                   maxLength={100}
+                  disabled={loading}
                   required
                 />
               </label>
@@ -161,6 +166,7 @@ const handleSubmit = async (e) => {
                   onChange={handleChange}
                   autoComplete="organization"
                   maxLength={150}
+                  disabled={loading}
                   required
                 />
               </label>
@@ -175,6 +181,7 @@ const handleSubmit = async (e) => {
                   onChange={handleChange}
                   autoComplete="email"
                   maxLength={254}
+                  disabled={loading}
                   required
                 />
               </label>
@@ -191,6 +198,7 @@ const handleSubmit = async (e) => {
                   maxLength={20}
                   pattern="[+]?[0-9 ()-]{7,20}"
                   title="Enter a valid phone number."
+                  disabled={loading}
                   required
                 />
               </label>
@@ -205,6 +213,7 @@ const handleSubmit = async (e) => {
                 onChange={handleChange}
                 rows={3}
                 maxLength={1500}
+                disabled={loading}
               />
             </label>
 
@@ -217,7 +226,7 @@ const handleSubmit = async (e) => {
             <button
               type="submit"
               className="contact-submit"
-              disabled={status === "loading"}
+              disabled={status === "loading" || loading}
             >
               {status === "loading"
                 ? "Sending enquiry..."

@@ -16,6 +16,7 @@ import Pharmacy from './pages/Pharmacy';
 import Analytics from './pages/Analytics';
 import TodayAppointments from './pages/TodayAppointment';
 import Frontal from './pages/Frontal';
+import ContactModal from './components/home/ContactModal';
 
 import ClinicQueue from './components/public/ClinicQueue';
 function App() {
@@ -59,7 +60,7 @@ function App() {
               <Route path='/pharmacy' element={ <ProtectedRoute> <Pharmacy /> </ProtectedRoute>} />
               <Route path='/analytics' element={ <ProtectedRoute> <Analytics /> </ProtectedRoute>} />
               <Route path='/appointments/today' element = { <ProtectedRoute> <TodayAppointments /> </ProtectedRoute> } />
-
+              <Route path='/contact' element={<ContactModal />} />
             </Routes>
           </main>
         </Router>

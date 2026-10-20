@@ -159,7 +159,7 @@ const Home = () => {
                 className="pma-button pma-button-primary"
                 onClick={() => setIsContactModalOpen(true)}
               >
-                Get Started <span aria-hidden="true">↗</span>
+                Start Free Trial Now <span aria-hidden="true">↗</span>
               </button>
 
               <a href="#features" className="pma-button pma-button-outline">
@@ -313,9 +313,16 @@ const Home = () => {
                 Give your team a clear, repeatable process for managing
                 appointments, consultations, and medicine workflows.
               </p>
-              <Link to="/signup" className="pma-button pma-button-primary">
-                Explore PMA <span aria-hidden="true">→</span>
-              </Link>
+              {/* <Link to="/signup" className="pma-button pma-button-primary">
+                Book Demo <span aria-hidden="true"></span>
+              </Link> */}
+              <button
+                type="button"
+                className="pma-button pma-button-primary"
+                onClick={() => setIsContactModalOpen(true)}
+              >
+                Book Demo <span aria-hidden="true">→</span>
+              </button>
             </div>
 
             <div className="pma-steps">
@@ -368,7 +375,7 @@ const Home = () => {
                 className="pma-button pma-button-white"
                 onClick={() => setIsContactModalOpen(true)}
               >
-                Get Started <span aria-hidden="true">↗</span>
+                Contact us <span aria-hidden="true">↗</span>
               </button>
               <Link to="/frontal" className="pma-button pma-button-ghost">
                 Open Dashboard

@@ -6,8 +6,9 @@ const Footer = () => {
 
     return (
         <footer className="footer">
-            <p>
-                © {year} PMA | Designed & Developed by <strong>Mohammed Naseem Khan</strong> 
+            <p className="login-copyright">
+                © {new Date().getFullYear()} PMA.
+                All rights reserved.
             </p>
         </footer>
     );
